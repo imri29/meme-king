@@ -162,7 +162,7 @@ class GeneratorDashboard extends Component {
             const randomY = (Math.floor(Math.random() * canvas.height) + 1) / 2
 
             fabric.Image.fromURL(file.preview, function (image) {
-                image = helpers.modifyImageDimensions({ image, wantedMaxHeight: 100 })
+                image = helpers.modifyImageDimensions({ image, wantedMaxWidth: 211 })
                 image.left = randomX
                 image.top = randomY
                 canvas.add(image)
